@@ -1,1 +1,0 @@
-Try to match the versions of Postgres between the Docker image and this computer
