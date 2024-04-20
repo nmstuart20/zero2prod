@@ -1,7 +1,6 @@
-use actix_web::web::get;
 use std::net::TcpListener;
 use zero2prod::configuration::get_configuration;
-use zero2prod::{configuration, startup::*};
+use zero2prod::startup::*;
 
 #[tokio::main]
 async fn main() -> Result<(), std::io::Error> {
