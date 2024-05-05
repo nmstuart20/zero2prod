@@ -18,8 +18,7 @@ pub struct FormData {
     )
 )]
 pub async fn subscribe(form: web::Form<FormData>, pool: web::Data<PgPool>) -> HttpResponse {
-    match insert_subscriber(&form, &pool).await
-    {
+    match insert_subscriber(&form, &pool).await {
         Ok(_) => HttpResponse::Ok().finish(),
         Err(e) => {
             tracing::error!("Failed to execute sql query: {:?}", e);
@@ -47,6 +46,7 @@ pub async fn insert_subscriber(form: &FormData, pool: &PgPool) -> Result<(), sql
     .await
     .map_err(|e| {
         tracing::error!("Failed to execute query: {:?}", e);
-        e})?;
+        e
+    })?;
     Ok(())
 }
