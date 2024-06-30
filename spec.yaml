@@ -24,3 +24,11 @@ services:
     # All incoming requests should be routed to our app
     routes:
       - path: /
+databases:
+# PG = postgres
+  - engine: PG
+    name: newsletter
+    # to keep the bill low
+    num_nodes: 1
+    size: db-s-dev-database
+    version: "14"
