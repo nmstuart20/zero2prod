@@ -1,5 +1,5 @@
 # Zero To Production Newsletter
-Repo to work along side the zero to production book. This is a could native newsletter application in Rust. 
+Repo to work along side the zero to production book. This is a cloud native newsletter application in Rust. 
 
 ## Pre-requisites
 
