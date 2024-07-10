@@ -1,2 +1,0 @@
-Example 
-curl -i -X POST -d 'email=emily_stuart@hotmail.com&name=Emily' http://127.0.0.1:8000/subscriptions
